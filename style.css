@@ -398,6 +398,9 @@ text-align: justify;
     width: 90%;
 }
 
+.skills .skills-content .express::before{
+    width: 70%;
+}
 .skills .skills-content .css::before{
     width: 65%;
 }
