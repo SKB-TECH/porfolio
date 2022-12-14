@@ -6,7 +6,20 @@ $(document).ready(function () {
         else {
             $('.navbar').removeClass('sticky')
         }
+
+        if (this.scroll > 500) {
+            $('.scroll-up-btn').addClass('show')
+        }
+        else {
+            $('.scroll-up-btn').removeClass('show')
+        }
     })
+
+    // slide-up script
+    $('.scroll-up-btn').click(function () {
+        $('html').animate({ scrollTop: 0 })
+    });
+
 
     // toggle menu.btn
     $('.menu-btn').click(function () {
@@ -14,6 +27,21 @@ $(document).ready(function () {
         $('.menu-btn i').toggleClass("active")
     })
 
+
+    // typescript animated
+    var typed = new Typed(".typing", {
+        strings: ["Web Designer", " Software Developper", "Freelance"],
+        typedSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    })
+
+    var typed = new Typed(".typing-2", {
+        strings: ["Web Designer", " Software Developper", "Freelance"],
+        typedSpeed: 100,
+        backSpeed: 60,
+        loop: true
+    })
     // owl carousel script
     $('.carousel').owlCarousel({
         margin: 20,
