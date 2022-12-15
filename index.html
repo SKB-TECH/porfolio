@@ -10,6 +10,8 @@
     <script src="./node_modules/jquery/dist/jquery.min.js  "></script> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
     <title>SKB-TECH</title>
 </head>
@@ -178,7 +180,7 @@ Translated with www.DeepL.com/Translator (free version)
                     <div class="bars">
                         <div class="info">
                             <span>NoSQL</span>
-                            <span>60%</span>
+                            <span>70%</span>
                         </div>
                         <div class="line nosql"></div>
                     </div>
@@ -293,27 +295,27 @@ Translated with www.DeepL.com/Translator (free version)
                 </div>
                 <div class="column right">
                     <div class="text">Send me a message</div>
-                    <form action="#">
+                    <form action="#" method="POST">
                         <div class="fields">
                             <div class="field name">
-                            <input type="text" name="nom" placeholder="Name" required>
+                            <input type="text" id="name" placeholder="Name" required>
                             </div>
 
                             <div class="field email">
-                                <input type="email" name="email" placeholder="email" required>
+                                <input type="email" id="email" name="email" placeholder="email" required>
                             </div>
                         </div>
                         <div class="field subject">
-                            <input type="text" name="subject" placeholder="subject" required>
+                            <input type="text" name="subject" id="subjetc" placeholder="subject" required>
                         </div>
 
                         <div class="field textarea">
-                            <textarea name="" id="" cols="30" rows="10"  placeholder="Describe ...." required>
+                            <textarea name="" id="content" cols="30" rows="10"  placeholder="Describe ...." required>
                             </textarea>
                         </div>
 
                         <div class="button">
-                            <button type="submit">
+                            <button type="submit" id="btn">
                                 Sende message
                             </button>
                         </div>
@@ -325,7 +327,16 @@ Translated with www.DeepL.com/Translator (free version)
 
     <!-- section footer -->
     <footer>
-        <span>Created By <a href="#">SKB-TECH</a>|<span class="fas fa-copyright"></span> 2021 all right reserved </span>
+           <span>Created By <a href="https://github.com/SKB-TECH">SKB-TECH</a>|<span class="fas fa-copyright"></span> 2021 all right reserved </span>
     </footer>
+    </script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("JanCYir95_5X4NXGG");
+    })();
+    </script>
     <script src="./script.js"></script>
 </html>
